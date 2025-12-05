@@ -1015,7 +1015,7 @@ img {
 /* Главный заголовок H1 */
 .pages h1 {
   font-family: var(--font-head);
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 30px;
