@@ -5,29 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/ionex-term/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/ionex-term/assets/styles-DNi7N2Dr.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="./#hero" class="header__logo">
+          Ionex-Term<span class="header__dot">.</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+              <li class="header__item"><a href="./#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="./#advantages" class="header__link">Преимущества</a></li>
+              <li class="header__item"><a href="./#innovation" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="./#education" class="header__link">Обучение</a></li>
+              <li class="header__item"><a href="./#faq" class="header__link">FAQ</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="./#contact" class="header__btn btn btn--primary">
+              Начать сейчас
+          </a>
+          <button class="header__burger" aria-label="Открыть меню">
+              <span></span>
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
-
 
     <main>
       <div class="container">
@@ -38,20 +45,51 @@
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__container">
+
+      <div class="footer__col footer__col--brand">
+          <a href="./#hero" class="footer__logo">
+              Ionex-Term
+          </a>
+          <p class="footer__desc">
+              Передовая цифровая инфраструктура для тех, кто строит будущее уже сегодня.
+          </p>
+          <nav class="footer__nav">
+              <a href="./#about" class="footer__link">О платформе</a>
+              <a href="./#innovation" class="footer__link">Технологии</a>
+              <a href="./#education" class="footer__link">Обучение</a>
+              <a href="./#faq" class="footer__link">FAQ</a>
+          </nav>
+      </div>
+
+      <div class="footer__col footer__col--info">
+          <div class="footer__contacts">
+              <a href="mailto:support@ionex-term.org" class="footer__contact-link">
+                  <i data-lucide="mail"></i> support@ionex-term.org
+              </a>
+              <a href="tel:+442079460123" class="footer__contact-link">
+                  <i data-lucide="phone"></i> +44 20 7946 0123
+              </a>
+              <div class="footer__address">
+                  <i data-lucide="map-pin"></i>
+                  71 Cherry Court, Southampton, SO53 5PD, UK
+              </div>
+          </div>
+
+          <div class="footer__legal">
+              <a href="./privacy.html">Privacy Policy</a>
+              <a href="./cookies.html">Cookie Policy</a>
+              <a href="./terms.html">Terms of Use</a>
+              <a href="./return.html">Return Policy</a>
+              <a href="./disclaimer.html">Disclaimer</a>
+              <a href="./personal-data-policy.html">Personal Data</a>
+          </div>
+
+          <div class="footer__copy">
+              &copy; 2025 Ionex-Term. All rights reserved.
+          </div>
+      </div>
   </div>
 </footer>
-
   </body>
 </html>

@@ -1,56 +1,346 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/ionex-term/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ionex-Term | Инновации на пальцах</title>
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <script type="module" crossorigin src="/ionex-term/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/ionex-term/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/ionex-term/assets/styles-DNi7N2Dr.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="./#hero" class="header__logo">
+          Ionex-Term<span class="header__dot">.</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+              <li class="header__item"><a href="./#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="./#advantages" class="header__link">Преимущества</a></li>
+              <li class="header__item"><a href="./#innovation" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="./#education" class="header__link">Обучение</a></li>
+              <li class="header__item"><a href="./#faq" class="header__link">FAQ</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="./#contact" class="header__btn btn btn--primary">
+              Начать сейчас
+          </a>
+          <button class="header__burger" aria-label="Открыть меню">
+              <span></span>
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="container hero__container">
+      <div class="hero__content">
+          <div class="hero__badge">
+              <span class="hero__badge-dot"></span> Платформа года 2025
+          </div>
+          <h1 class="hero__title">
+              Инновационная <br>
+              <span class="text-gradient">технология</span> <br>
+              нового поколения
+          </h1>
+          <p class="hero__desc">
+              Передовая цифровая инфраструктура для тех, кто строит будущее.
+              Воплотите мечты в реальность с инструментами, которые меняют правила игры.
+          </p>
+          <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary hero__btn">
+                  Начать сейчас
+              </a>
+              <a href="#about" class="hero__link-more">
+                  Узнать больше <i data-lucide="arrow-down"></i>
+              </a>
+          </div>
+      </div>
+
+      <div class="hero__visual" id="canvas-container">
+          </div>
+  </div>
+</section>
+<section class="section about" id="about">
+  <div class="container about__container">
+      <div class="about__content reveal-up">
+          <span class="section__tag">О платформе</span>
+          <h2 class="section__title">Решения, которые меняют правила игры</h2>
+          <p class="section__desc">
+              Ionex-Term — это передовая цифровая инфраструктура, созданная для тех, кто ценит время и эффективность. Мы объединили экспертную аналитику и автоматизированные алгоритмы, чтобы вы могли воплотить мечты в реальность.
+          </p>
+          <ul class="about__list">
+              <li><i data-lucide="check-circle"></i> Проверенный партнер в ЕС и Англии</li>
+              <li><i data-lucide="check-circle"></i> Технология нового поколения</li>
+              <li><i data-lucide="check-circle"></i> Удобная адаптация без сложностей</li>
+          </ul>
+      </div>
+      <div class="about__stats reveal-up" style="transition-delay: 0.2s;">
+          <div class="stat-card">
+              <span class="stat-card__num">98%</span>
+              <span class="stat-card__label">Успешных стартов</span>
+          </div>
+          <div class="stat-card">
+              <span class="stat-card__num">24/7</span>
+              <span class="stat-card__label">Экспертная поддержка</span>
+          </div>
+          <div class="stat-card">
+              <span class="stat-card__num">2 мин</span>
+              <span class="stat-card__label">Время подключения</span>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section section--alt advantages" id="advantages">
+  <div class="container">
+      <div class="section__header reveal-up">
+          <h2 class="section__title">Почему выбирают нас?</h2>
+          <p class="section__desc">Расширьте горизонты проекта с инструментами, которые работают на вас.</p>
+      </div>
+
+      <div class="grid-3">
+          <div class="feature-card reveal-up">
+              <div class="feature-card__icon"><i data-lucide="zap"></i></div>
+              <h3>Быстрый старт</h3>
+              <p>Легко разобраться без опыта. Подключение занимает 2 минуты, после чего вы сразу получаете доступ к инфраструктуре.</p>
+          </div>
+          <div class="feature-card reveal-up" style="transition-delay: 0.1s;">
+              <div class="feature-card__icon"><i data-lucide="shield-check"></i></div>
+              <h3>Надежность</h3>
+              <p>Методологии, доказавшие эффективность. Мы используем протоколы безопасности уровня Enterprise.</p>
+          </div>
+          <div class="feature-card reveal-up" style="transition-delay: 0.2s;">
+              <div class="feature-card__icon"><i data-lucide="trending-up"></i></div>
+              <h3>Стратегия роста</h3>
+              <p>Оцените перспективы проекта с помощью AI-инструментов для реальных задач и пассивного дохода.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section innovation" id="innovation">
+  <div class="container innovation__container">
+      <div class="innovation__visual reveal-up">
+          <img src="img/placeholder.png" alt="AI Technology" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+      </div>
+      <div class="innovation__content reveal-up">
+          <span class="section__tag">Инновации</span>
+          <h2 class="section__title">Технологии, которые работают на вас</h2>
+          <p class="section__desc">
+              Платформа уже доступна в Европе. Мы используем нейросети для анализа больших данных, предоставляя вам выжимку лучших решений.
+          </p>
+          <div class="innovation__grid">
+              <div class="inno-item">
+                  <h4>AI-аналитика</h4>
+                  <p>Автоматический поиск трендов.</p>
+              </div>
+              <div class="inno-item">
+                  <h4>Cloud Core</h4>
+                  <p>Облачные вычисления без задержек.</p>
+              </div>
+          </div>
+          <a href="#contact" class="btn btn--primary" style="margin-top: 20px;">Запросить доступ</a>
+      </div>
+  </div>
+</section>
+
+<section class="section section--alt education" id="education">
+  <div class="container">
+      <div class="section__header reveal-up">
+          <h2 class="section__title">Пошаговый путь, понятный каждому</h2>
+          <p class="section__desc">Переосмыслите подход к развитию всего за 3 шага.</p>
+      </div>
+
+      <div class="steps-grid">
+          <div class="step-card reveal-up">
+              <div class="step-card__num">01</div>
+              <h3>Регистрация</h3>
+              <p>Пройти регистрацию на платформе. Это бесплатно и занимает мгновения.</p>
+          </div>
+          <div class="step-card reveal-up" style="transition-delay: 0.1s;">
+              <div class="step-card__num">02</div>
+              <h3>Обучение</h3>
+              <p>Получите доступ к базе знаний. Практики, применимые уже сегодня.</p>
+          </div>
+          <div class="step-card reveal-up" style="transition-delay: 0.2s;">
+              <div class="step-card__num">03</div>
+              <h3>Результат</h3>
+              <p>Постройте карьеру или проект, который работает на вас. Технология для пассивного дохода.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section faq" id="faq">
+  <div class="container" style="max-width: 800px;">
+      <div class="section__header reveal-up">
+          <h2 class="section__title">Частые вопросы</h2>
+      </div>
+
+      <div class="accordion reveal-up">
+          <div class="accordion__item">
+              <button class="accordion__header">Для кого подходит платформа?</button>
+              <div class="accordion__body">
+                  <p>Ionex-Term подходит как для новичков, так и для профессионалов. Легко разобраться без опыта благодаря интуитивному интерфейсу.</p>
+              </div>
+          </div>
+          <div class="accordion__item">
+              <button class="accordion__header">Нужны ли вложения для старта?</button>
+              <div class="accordion__body">
+                  <p>Бесплатная консультация по всем вопросам доступна после регистрации. Вы сами выбираете стратегию участия.</p>
+              </div>
+          </div>
+          <div class="accordion__item">
+              <button class="accordion__header">В каких странах работает?</button>
+              <div class="accordion__body">
+                  <p>Предложение активно только в странах ЕС и Великобритании. Платформа полностью соответствует местному законодательству.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section section--alt contact" id="contact">
+  <div class="container contact__container">
+      <div class="contact__info reveal-up">
+          <h2 class="section__title">Остались вопросы?</h2>
+          <p class="section__desc">Заполните форму, и наш менеджер свяжется с вами для бесплатной консультации.</p>
+
+          <div class="contact__details">
+              <div class="detail-item">
+                  <i data-lucide="mail"></i>
+                  <span>support@ionex-term.org</span>
+              </div>
+              <div class="detail-item">
+                  <i data-lucide="phone"></i>
+                  <span>+44 20 7946 0123</span>
+              </div>
+          </div>
+      </div>
+
+      <form class="contact__form reveal-up" id="contactForm" novalidate>
+          <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" placeholder="Иван Петров" required>
+              <span class="error-msg">Введите имя</span>
+          </div>
+
+          <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+              <span class="error-msg">Введите корректный email</span>
+          </div>
+
+          <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+44..." required>
+              <span class="error-msg">Только цифры допускаются</span>
+          </div>
+
+          <div class="form-group captcha-group">
+              <label id="captchaLabel">Сколько будет 5 + 3?</label>
+              <input type="number" id="captchaInput" required>
+              <span class="error-msg">Неверный ответ</span>
+          </div>
+
+          <div class="form-checkbox">
+              <input type="checkbox" id="policy" required>
+              <label for="policy">Я согласен с <a href="personal-data-policy.html">политикой обработки данных</a></label>
+          </div>
+
+          <button type="submit" class="btn btn--primary form-btn">
+              <span>Отправить заявку</span>
+          </button>
+
+          <div class="form-success" id="formSuccess">
+              <i data-lucide="check-circle"></i>
+              <p>Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.</p>
+          </div>
+      </form>
+  </div>
+</section>
+
+
+
+
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__container">
+
+      <div class="footer__col footer__col--brand">
+          <a href="./#hero" class="footer__logo">
+              Ionex-Term
+          </a>
+          <p class="footer__desc">
+              Передовая цифровая инфраструктура для тех, кто строит будущее уже сегодня.
+          </p>
+          <nav class="footer__nav">
+              <a href="./#about" class="footer__link">О платформе</a>
+              <a href="./#innovation" class="footer__link">Технологии</a>
+              <a href="./#education" class="footer__link">Обучение</a>
+              <a href="./#faq" class="footer__link">FAQ</a>
+          </nav>
+      </div>
+
+      <div class="footer__col footer__col--info">
+          <div class="footer__contacts">
+              <a href="mailto:support@ionex-term.org" class="footer__contact-link">
+                  <i data-lucide="mail"></i> support@ionex-term.org
+              </a>
+              <a href="tel:+442079460123" class="footer__contact-link">
+                  <i data-lucide="phone"></i> +44 20 7946 0123
+              </a>
+              <div class="footer__address">
+                  <i data-lucide="map-pin"></i>
+                  71 Cherry Court, Southampton, SO53 5PD, UK
+              </div>
+          </div>
+
+          <div class="footer__legal">
+              <a href="./privacy.html">Privacy Policy</a>
+              <a href="./cookies.html">Cookie Policy</a>
+              <a href="./terms.html">Terms of Use</a>
+              <a href="./return.html">Return Policy</a>
+              <a href="./disclaimer.html">Disclaimer</a>
+              <a href="./personal-data-policy.html">Personal Data</a>
+          </div>
+
+          <div class="footer__copy">
+              &copy; 2025 Ionex-Term. All rights reserved.
+          </div>
+      </div>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookiePopup">
+      <div class="cookie-popup__content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="cookies.html">Cookie политике</a>.</p>
+          <button class="btn btn--primary btn--sm" id="cookieAccept">Принять</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script>
+      lucide.createIcons();
+  </script>
   </body>
 </html>
